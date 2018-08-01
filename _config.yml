@@ -66,6 +66,8 @@ collections:
     output: true
   run:
     output: true
+  translate:
+    output: true
 
 plugins:
   - jekyll-gist
