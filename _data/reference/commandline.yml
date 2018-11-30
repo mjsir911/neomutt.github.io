@@ -1,0 +1,94 @@
+---
+- arg: ~
+  desc: Special argument forces NeoMutt to stop option parsing and treat remaining arguments as addresses even if they start with a dash
+  opt: --
+- arg: alias
+  desc: Print an expanded version of the given alias to stdout and exit
+  opt: -A
+- arg: file
+  desc: Attach one or more files to a message (must be the last option) Add any addresses after the '--' argument
+  opt: -a
+- arg: ~
+  desc: Run in batch mode (do not start the ncurses UI)
+  opt: -B
+- arg: address
+  desc: Specify a blind carbon copy (Bcc) recipient
+  opt: -b
+- arg: address
+  desc: Specify a carbon copy (Cc) recipient
+  opt: -c
+- arg: ~
+  desc: Dump all config variables as 'name=value' pairs to stdout
+  opt: -D
+- arg: ~
+  desc: 'Like -D, but hide the value of sensitive variables'
+  opt: -D -S
+- arg: level
+  desc: Log debugging output to a file (default is \ The level can range from 1-5 and affects verbosity
+  opt: -d
+- arg: ~
+  desc: Edit draft (-H) or include (-i) file during message composition
+  opt: -E
+- arg: command
+  desc: Specify a command to be run after reading the config files
+  opt: -e
+- arg: config
+  desc: Specify an alternative initialization file to read
+  opt: -F
+- arg: mailbox
+  desc: Specify a mailbox (as defined with 'mailboxes' command) to load
+  opt: -f
+- arg: ~
+  desc: Start NeoMutt with a listing of subscribed newsgroups
+  opt: -G
+- arg: server
+  desc: 'Like -G, but start at specified news server'
+  opt: -g
+- arg: draft
+  desc: Specify a draft file with header and body for message composing
+  opt: -H
+- arg: ~
+  desc: Print this help message and exit
+  opt: -h
+- arg: include
+  desc: Specify an include file to be embedded in the body of a message
+  opt: -i
+- arg: file
+  desc: Specify a file for debugging output (default \
+  opt: -l
+- arg: type
+  desc: 'Specify a default mailbox format type for newly created folders The type is either MH, MMDF, Maildir or mbox (case-insensitive)'
+  opt: -m
+- arg: ~
+  desc: Do not read the system-wide configuration file
+  opt: -n
+- arg: ~
+  desc: 'Resume a prior postponed message, if any'
+  opt: -p
+- arg: variable
+  desc: Query a configuration variable and print its value to stdout (after the config has been read and any commands executed)
+  opt: -Q
+- arg: ~
+  desc: Open mailbox in read-only mode
+  opt: -R
+- arg: subject
+  desc: Specify a subject (must be enclosed in quotes if it has spaces)
+  opt: -s
+- arg: ~
+  desc: Print the NeoMutt version and compile-time definitions and exit
+  opt: -v
+- arg: ~
+  desc: Print the NeoMutt license and copyright information and exit
+  opt: -vv
+- arg: ~
+  desc: Simulate the mailx(1) send mode
+  opt: -x
+- arg: ~
+  desc: Start NeoMutt with a listing of all defined mailboxes
+  opt: -y
+- arg: ~
+  desc: Open the first mailbox with new message or exit immediately with exit code 1 if none is found in all defined mailboxes
+  opt: -Z
+- arg: ~
+  desc: Open the first or specified (-f) mailbox if it holds any message or exit immediately with exit code 1 otherwise
+  opt: -z
