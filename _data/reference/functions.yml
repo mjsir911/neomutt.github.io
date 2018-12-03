@@ -1,0 +1,1243 @@
+---
+- funcs:
+    - default: L
+      desc: move to the bottom of the page
+      title: bottom-page
+    - default: ''
+      desc: calculate message statistics for all mailboxes
+      title: check-stats
+    - default: ''
+      desc: move entry to bottom of screen
+      title: current-bottom
+    - default: ''
+      desc: move entry to middle of screen
+      title: current-middle
+    - default: ''
+      desc: move entry to top of screen
+      title: current-top
+    - default: ''
+      desc: end of conditional execution (noop)
+      title: end-cond
+    - default: ':'
+      desc: enter a neomuttrc command
+      title: enter-command
+    - default: q
+      desc: exit this menu
+      title: exit
+    - default: =
+      desc: move to the first entry
+      title: first-entry
+    - default: ']'
+      desc: scroll down 1/2 page
+      title: half-down
+    - default: '['
+      desc: scroll up 1/2 page
+      title: half-up
+    - default: '?'
+      desc: this screen
+      title: help
+    - default: ''
+      desc: jump to an index number
+      title: jump
+    - default: '*'
+      desc: move to the last entry
+      title: last-entry
+    - default: M
+      desc: move to the middle of the page
+      title: middle-page
+    - default: j
+      desc: move to the next entry
+      title: next-entry
+    - default: '&gt;'
+      desc: scroll down one line
+      title: next-line
+    - default: z
+      desc: move to the next page
+      title: next-page
+    - default: k
+      desc: move to the previous entry
+      title: previous-entry
+    - default: '&lt;'
+      desc: scroll up one line
+      title: previous-line
+    - default: Z
+      desc: move to the previous page
+      title: previous-page
+    - default: '^L'
+      desc: clear and redraw the screen
+      title: refresh
+    - default: /
+      desc: search for a regular expression
+      title: search
+    - default: n
+      desc: search for next match
+      title: search-next
+    - default: ''
+      desc: search for next match in opposite direction
+      title: search-opposite
+    - default: Esc /
+      desc: search backwards for a regular expression
+      title: search-reverse
+    - default: '&lt;Enter&gt;'
+      desc: select the current entry
+      title: select-entry
+    - default: '&lt;Return&gt;'
+      desc: select the current entry
+      title: select-entry
+    - default: '!'
+      desc: invoke a command in a subshell
+      title: shell-escape
+    - default: t
+      desc: tag the current entry
+      title: tag-entry
+    - default: ;
+      desc: apply next function to tagged messages
+      title: tag-prefix
+    - default: ''
+      desc: apply next function ONLY to tagged messages
+      title: tag-prefix-cond
+    - default: H
+      desc: move to the top of the page
+      title: top-page
+    - default: ''
+      desc: display the keycode for a key press
+      title: what-key
+  grouping: generic
+- funcs:
+    - default: b
+      desc: remail a message to another user
+      title: bounce-message
+    - default: '#'
+      desc: break the thread in two
+      title: break-thread
+    - default: .
+      desc: list mailboxes with new mail
+      title: buffy-list
+    - default: ''
+      desc: mark all articles in newsgroup as read
+      title: catchup
+    - default: c
+      desc: open a different folder
+      title: change-folder
+    - default: Esc c
+      desc: open a different folder in read only mode
+      title: change-folder-readonly
+    - default: ''
+      desc: open a different newsgroup
+      title: change-newsgroup
+    - default: ''
+      desc: open a different newsgroup in read only mode
+      title: change-newsgroup-readonly
+    - default: ''
+      desc: open a different virtual folder
+      title: change-vfolder
+    - default: Esc P
+      desc: check for classic PGP
+      title: check-traditional-pgp
+    - default: W
+      desc: clear a status flag from a message
+      title: clear-flag
+    - default: Esc V
+      desc: collapse/uncollapse all threads
+      title: collapse-all
+    - default: Esc v
+      desc: collapse/uncollapse current thread
+      title: collapse-thread
+    - default: ''
+      desc: compose a new message to the sender
+      title: compose-to-sender
+    - default: C
+      desc: copy a message to a file/mailbox
+      title: copy-message
+    - default: a
+      desc: create an alias from a message sender
+      title: create-alias
+    - default: Esc C
+      desc: make decoded (text/plain) copy
+      title: decode-copy
+    - default: Esc s
+      desc: make decoded copy (text/plain) and delete
+      title: decode-save
+    - default: ''
+      desc: make decrypted copy
+      title: decrypt-copy
+    - default: ''
+      desc: make decrypted copy and delete
+      title: decrypt-save
+    - default: d
+      desc: delete the current entry
+      title: delete-message
+    - default: D
+      desc: delete messages matching a pattern
+      title: delete-pattern
+    - default: Esc d
+      desc: delete all messages in subthread
+      title: delete-subthread
+    - default: '^D'
+      desc: delete all messages in thread
+      title: delete-thread
+    - default: '@'
+      desc: display full address of sender
+      title: display-address
+    - default: '&lt;Enter&gt;'
+      desc: display a message
+      title: display-message
+    - default: '&lt;Return&gt;'
+      desc: display a message
+      title: display-message
+    - default: h
+      desc: display message and toggle header weeding
+      title: display-toggle-weed
+    - default: ''
+      desc: edit the raw message (edit and edit-raw-message are synonyms)
+      title: edit
+    - default: Y
+      desc: "add, change, or delete a message's label"
+      title: edit-label
+    - default: e
+      desc: 'edit the raw message if the mailbox is not read-only, otherwise view it'
+      title: edit-or-view-raw-message
+    - default: ''
+      desc: edit the raw message (edit and edit-raw-message are synonyms)
+      title: edit-raw-message
+    - default: '^E'
+      desc: edit attachment content type
+      title: edit-type
+    - default: ''
+      desc: read entire thread of the current message
+      title: entire-thread
+    - default: '^K'
+      desc: extract supported public keys
+      title: extract-keys
+    - default: G
+      desc: retrieve mail from POP server
+      title: fetch-mail
+    - default: F
+      desc: toggle a message's 'important' flag
+      title: flag-message
+    - default: ''
+      desc: followup to newsgroup
+      title: followup-message
+    - default: '^F'
+      desc: wipe passphrases from memory
+      title: forget-passphrase
+    - default: f
+      desc: forward a message with comments
+      title: forward-message
+    - default: ''
+      desc: forward to newsgroup
+      title: forward-to-group
+    - default: ''
+      desc: get all children of the current message
+      title: get-children
+    - default: ''
+      desc: get message with Message-Id
+      title: get-message
+    - default: ''
+      desc: get parent of the current message
+      title: get-parent
+    - default: g
+      desc: reply to all recipients
+      title: group-reply
+    - default: ''
+      desc: force retrieval of mail from IMAP server
+      title: imap-fetch-mail
+    - default: ''
+      desc: logout from all IMAP servers
+      title: imap-logout-all
+    - default: l
+      desc: show only messages matching a pattern
+      title: limit
+    - default: ''
+      desc: limit view to current thread
+      title: limit-current-thread
+    - default: '&amp;'
+      desc: link tagged message to the current one
+      title: link-threads
+    - default: L
+      desc: reply to specified mailing list
+      title: list-reply
+    - default: m
+      desc: compose a new mail message
+      title: mail
+    - default: Esc k
+      desc: mail a PGP public key
+      title: mail-key
+    - default: '~'
+      desc: create a hotkey macro for the current message
+      title: mark-message
+    - default: ''
+      desc: modify (notmuch/imap) tags
+      title: modify-labels
+    - default: ''
+      desc: modify (notmuch/imap) tags and then hide message
+      title: modify-labels-then-hide
+    - default: ''
+      desc: modify (notmuch/imap) tags
+      title: modify-tags
+    - default: ''
+      desc: modify (notmuch/imap) tags and then hide message
+      title: modify-tags-then-hide
+    - default: ''
+      desc: jump to the next new message
+      title: next-new
+    - default: '&lt;Tab&gt;'
+      desc: jump to the next new or unread message
+      title: next-new-then-unread
+    - default: Esc n
+      desc: jump to the next subthread
+      title: next-subthread
+    - default: '^N'
+      desc: jump to the next thread
+      title: next-thread
+    - default: j
+      desc: move to the next undeleted message
+      title: next-undeleted
+    - default: ''
+      desc: jump to the next unread message
+      title: next-unread
+    - default: ''
+      desc: open next mailbox with new mail
+      title: next-unread-mailbox
+    - default: P
+      desc: jump to parent message in thread
+      title: parent-message
+    - default: '|'
+      desc: pipe message/attachment to a shell command
+      title: pipe-message
+    - default: ''
+      desc: post message to newsgroup
+      title: post-message
+    - default: ''
+      desc: jump to the previous new message
+      title: previous-new
+    - default: Esc &lt;Tab&gt;
+      desc: jump to the previous new or unread message
+      title: previous-new-then-unread
+    - default: Esc p
+      desc: jump to previous subthread
+      title: previous-subthread
+    - default: '^P'
+      desc: jump to previous thread
+      title: previous-thread
+    - default: k
+      desc: move to the previous undeleted message
+      title: previous-undeleted
+    - default: ''
+      desc: jump to the previous unread message
+      title: previous-unread
+    - default: p
+      desc: print the current entry
+      title: print-message
+    - default: ''
+      desc: 'delete the current entry, bypassing the trash folder'
+      title: purge-message
+    - default: ''
+      desc: 'delete the current thread, bypassing the trash folder'
+      title: purge-thread
+    - default: ''
+      desc: "delete from NeoMutt, don't touch on disk"
+      title: quasi-delete
+    - default: Q
+      desc: query external program for addresses
+      title: query
+    - default: q
+      desc: save changes to mailbox and quit
+      title: quit
+    - default: Esc r
+      desc: mark the current subthread as read
+      title: read-subthread
+    - default: '^R'
+      desc: mark the current thread as read
+      title: read-thread
+    - default: R
+      desc: recall a postponed message
+      title: recall-message
+    - default: ''
+      desc: reconstruct thread containing current message
+      title: reconstruct-thread
+    - default: r
+      desc: reply to a message
+      title: reply
+    - default: Esc e
+      desc: use the current message as a template for a new one
+      title: resend-message
+    - default: ''
+      desc: jump to root message in thread
+      title: root-message
+    - default: s
+      desc: save message/attachment to a mailbox/file
+      title: save-message
+    - default: w
+      desc: set a status flag on a message
+      title: set-flag
+    - default: Esc l
+      desc: show currently active limit pattern
+      title: show-limit
+    - default: M
+      desc: show log (and debug) messages
+      title: show-log-messages
+    - default: V
+      desc: show the NeoMutt version number and date
+      title: show-version
+    - default: ''
+      desc: move the highlight to next mailbox
+      title: sidebar-next
+    - default: ''
+      desc: move the highlight to next mailbox with new mail
+      title: sidebar-next-new
+    - default: ''
+      desc: open highlighted mailbox
+      title: sidebar-open
+    - default: ''
+      desc: scroll the sidebar down 1 page
+      title: sidebar-page-down
+    - default: ''
+      desc: scroll the sidebar up 1 page
+      title: sidebar-page-up
+    - default: ''
+      desc: move the highlight to previous mailbox
+      title: sidebar-prev
+    - default: ''
+      desc: move the highlight to previous mailbox with new mail
+      title: sidebar-prev-new
+    - default: ''
+      desc: toggle between mailboxes and virtual mailboxes
+      title: sidebar-toggle-virtual
+    - default: ''
+      desc: make the sidebar (in)visible
+      title: sidebar-toggle-visible
+    - default: o
+      desc: sort messages
+      title: sort-mailbox
+    - default: O
+      desc: sort messages in reverse order
+      title: sort-reverse
+    - default: $
+      desc: save changes to mailbox
+      title: sync-mailbox
+    - default: T
+      desc: tag messages matching a pattern
+      title: tag-pattern
+    - default: ''
+      desc: tag the current subthread
+      title: tag-subthread
+    - default: Esc t
+      desc: tag the current thread
+      title: tag-thread
+    - default: N
+      desc: toggle a message's 'new' flag
+      title: toggle-new
+    - default: ''
+      desc: toggle view of read messages
+      title: toggle-read
+    - default: '%'
+      desc: toggle whether the mailbox will be rewritten
+      title: toggle-write
+    - default: u
+      desc: undelete the current entry
+      title: undelete-message
+    - default: U
+      desc: undelete messages matching a pattern
+      title: undelete-pattern
+    - default: Esc u
+      desc: undelete all messages in subthread
+      title: undelete-subthread
+    - default: '^U'
+      desc: undelete all messages in thread
+      title: undelete-thread
+    - default: '^T'
+      desc: untag messages matching a pattern
+      title: untag-pattern
+    - default: ''
+      desc: generate virtual folder from query
+      title: vfolder-from-query
+    - default: ''
+      desc: shifts virtual folder time window backwards
+      title: vfolder-window-backward
+    - default: ''
+      desc: shifts virtual folder time window forwards
+      title: vfolder-window-forward
+    - default: v
+      desc: show MIME attachments
+      title: view-attachments
+    - default: ''
+      desc: show the raw message
+      title: view-raw-message
+  grouping: index
+- funcs:
+    - default: ''
+      desc: jump to the bottom of the message
+      title: bottom
+    - default: b
+      desc: remail a message to another user
+      title: bounce-message
+    - default: '#'
+      desc: break the thread in two
+      title: break-thread
+    - default: .
+      desc: list mailboxes with new mail
+      title: buffy-list
+    - default: c
+      desc: open a different folder
+      title: change-folder
+    - default: Esc c
+      desc: open a different folder in read only mode
+      title: change-folder-readonly
+    - default: ''
+      desc: open a different newsgroup
+      title: change-newsgroup
+    - default: ''
+      desc: open a different newsgroup in read only mode
+      title: change-newsgroup-readonly
+    - default: ''
+      desc: open a different virtual folder
+      title: change-vfolder
+    - default: ''
+      desc: calculate message statistics for all mailboxes
+      title: check-stats
+    - default: Esc P
+      desc: check for classic PGP
+      title: check-traditional-pgp
+    - default: W
+      desc: clear a status flag from a message
+      title: clear-flag
+    - default: ''
+      desc: compose a new message to the sender
+      title: compose-to-sender
+    - default: C
+      desc: copy a message to a file/mailbox
+      title: copy-message
+    - default: a
+      desc: create an alias from a message sender
+      title: create-alias
+    - default: Esc C
+      desc: make decoded (text/plain) copy
+      title: decode-copy
+    - default: Esc s
+      desc: make decoded copy (text/plain) and delete
+      title: decode-save
+    - default: ''
+      desc: make decrypted copy
+      title: decrypt-copy
+    - default: ''
+      desc: make decrypted copy and delete
+      title: decrypt-save
+    - default: d
+      desc: delete the current entry
+      title: delete-message
+    - default: Esc d
+      desc: delete all messages in subthread
+      title: delete-subthread
+    - default: '^D'
+      desc: delete all messages in thread
+      title: delete-thread
+    - default: '@'
+      desc: display full address of sender
+      title: display-address
+    - default: h
+      desc: display message and toggle header weeding
+      title: display-toggle-weed
+    - default: ''
+      desc: edit the raw message (edit and edit-raw-message are synonyms)
+      title: edit
+    - default: Y
+      desc: "add, change, or delete a message's label"
+      title: edit-label
+    - default: e
+      desc: 'edit the raw message if the mailbox is not read-only, otherwise view it'
+      title: edit-or-view-raw-message
+    - default: ''
+      desc: edit the raw message (edit and edit-raw-message are synonyms)
+      title: edit-raw-message
+    - default: '^E'
+      desc: edit attachment content type
+      title: edit-type
+    - default: ':'
+      desc: enter a neomuttrc command
+      title: enter-command
+    - default: ''
+      desc: read entire thread of the current message
+      title: entire-thread
+    - default: q
+      desc: exit this menu
+      title: exit
+    - default: '^K'
+      desc: extract supported public keys
+      title: extract-keys
+    - default: F
+      desc: toggle a message's 'important' flag
+      title: flag-message
+    - default: ''
+      desc: followup to newsgroup
+      title: followup-message
+    - default: '^F'
+      desc: wipe passphrases from memory
+      title: forget-passphrase
+    - default: f
+      desc: forward a message with comments
+      title: forward-message
+    - default: ''
+      desc: forward to newsgroup
+      title: forward-to-group
+    - default: g
+      desc: reply to all recipients
+      title: group-reply
+    - default: ''
+      desc: scroll down 1/2 page
+      title: half-down
+    - default: ''
+      desc: scroll up 1/2 page
+      title: half-up
+    - default: '?'
+      desc: this screen
+      title: help
+    - default: ''
+      desc: force retrieval of mail from IMAP server
+      title: imap-fetch-mail
+    - default: ''
+      desc: logout from all IMAP servers
+      title: imap-logout-all
+    - default: ''
+      desc: jump to an index number
+      title: jump
+    - default: '&amp;'
+      desc: link tagged message to the current one
+      title: link-threads
+    - default: L
+      desc: reply to specified mailing list
+      title: list-reply
+    - default: m
+      desc: compose a new mail message
+      title: mail
+    - default: Esc k
+      desc: mail a PGP public key
+      title: mail-key
+    - default: N
+      desc: toggle a message's 'new' flag
+      title: mark-as-new
+    - default: ''
+      desc: modify (notmuch/imap) tags
+      title: modify-labels
+    - default: ''
+      desc: modify (notmuch/imap) tags and then hide message
+      title: modify-labels-then-hide
+    - default: ''
+      desc: modify (notmuch/imap) tags
+      title: modify-tags
+    - default: ''
+      desc: modify (notmuch/imap) tags and then hide message
+      title: modify-tags-then-hide
+    - default: J
+      desc: move to the next entry
+      title: next-entry
+    - default: '&lt;Enter&gt;'
+      desc: scroll down one line
+      title: next-line
+    - default: '&lt;Return&gt;'
+      desc: scroll down one line
+      title: next-line
+    - default: ''
+      desc: jump to the next new message
+      title: next-new
+    - default: '&lt;Tab&gt;'
+      desc: jump to the next new or unread message
+      title: next-new-then-unread
+    - default: '&lt;Space&gt;'
+      desc: move to the next page
+      title: next-page
+    - default: Esc n
+      desc: jump to the next subthread
+      title: next-subthread
+    - default: '^N'
+      desc: jump to the next thread
+      title: next-thread
+    - default: j
+      desc: move to the next undeleted message
+      title: next-undeleted
+    - default: ''
+      desc: jump to the next unread message
+      title: next-unread
+    - default: ''
+      desc: open next mailbox with new mail
+      title: next-unread-mailbox
+    - default: P
+      desc: jump to parent message in thread
+      title: parent-message
+    - default: '|'
+      desc: pipe message/attachment to a shell command
+      title: pipe-message
+    - default: ''
+      desc: post message to newsgroup
+      title: post-message
+    - default: K
+      desc: move to the previous entry
+      title: previous-entry
+    - default: ''
+      desc: scroll up one line
+      title: previous-line
+    - default: ''
+      desc: jump to the previous new message
+      title: previous-new
+    - default: ''
+      desc: jump to the previous new or unread message
+      title: previous-new-then-unread
+    - default: '-'
+      desc: move to the previous page
+      title: previous-page
+    - default: Esc p
+      desc: jump to previous subthread
+      title: previous-subthread
+    - default: '^P'
+      desc: jump to previous thread
+      title: previous-thread
+    - default: k
+      desc: move to the previous undeleted message
+      title: previous-undeleted
+    - default: ''
+      desc: jump to the previous unread message
+      title: previous-unread
+    - default: p
+      desc: print the current entry
+      title: print-message
+    - default: ''
+      desc: 'delete the current entry, bypassing the trash folder'
+      title: purge-message
+    - default: ''
+      desc: 'delete the current thread, bypassing the trash folder'
+      title: purge-thread
+    - default: ''
+      desc: "delete from NeoMutt, don't touch on disk"
+      title: quasi-delete
+    - default: Q
+      desc: save changes to mailbox and quit
+      title: quit
+    - default: Esc r
+      desc: mark the current subthread as read
+      title: read-subthread
+    - default: '^R'
+      desc: mark the current thread as read
+      title: read-thread
+    - default: R
+      desc: recall a postponed message
+      title: recall-message
+    - default: ''
+      desc: reconstruct thread containing current message
+      title: reconstruct-thread
+    - default: '^L'
+      desc: clear and redraw the screen
+      title: redraw-screen
+    - default: r
+      desc: reply to a message
+      title: reply
+    - default: Esc e
+      desc: use the current message as a template for a new one
+      title: resend-message
+    - default: ''
+      desc: jump to root message in thread
+      title: root-message
+    - default: s
+      desc: save message/attachment to a mailbox/file
+      title: save-message
+    - default: /
+      desc: search for a regular expression
+      title: search
+    - default: n
+      desc: search for next match
+      title: search-next
+    - default: ''
+      desc: search for next match in opposite direction
+      title: search-opposite
+    - default: Esc /
+      desc: search backwards for a regular expression
+      title: search-reverse
+    - default: \\
+      desc: toggle search pattern coloring
+      title: search-toggle
+    - default: w
+      desc: set a status flag on a message
+      title: set-flag
+    - default: '!'
+      desc: invoke a command in a subshell
+      title: shell-escape
+    - default: V
+      desc: show the NeoMutt version number and date
+      title: show-version
+    - default: ''
+      desc: move the highlight to next mailbox
+      title: sidebar-next
+    - default: ''
+      desc: move the highlight to next mailbox with new mail
+      title: sidebar-next-new
+    - default: ''
+      desc: open highlighted mailbox
+      title: sidebar-open
+    - default: ''
+      desc: scroll the sidebar down 1 page
+      title: sidebar-page-down
+    - default: ''
+      desc: scroll the sidebar up 1 page
+      title: sidebar-page-up
+    - default: ''
+      desc: move the highlight to previous mailbox
+      title: sidebar-prev
+    - default: ''
+      desc: move the highlight to previous mailbox with new mail
+      title: sidebar-prev-new
+    - default: ''
+      desc: toggle between mailboxes and virtual mailboxes
+      title: sidebar-toggle-virtual
+    - default: ''
+      desc: make the sidebar (in)visible
+      title: sidebar-toggle-visible
+    - default: S
+      desc: skip beyond quoted text
+      title: skip-quoted
+    - default: o
+      desc: sort messages
+      title: sort-mailbox
+    - default: O
+      desc: sort messages in reverse order
+      title: sort-reverse
+    - default: $
+      desc: save changes to mailbox
+      title: sync-mailbox
+    - default: t
+      desc: tag the current entry
+      title: tag-message
+    - default: T
+      desc: toggle display of quoted text
+      title: toggle-quoted
+    - default: '^'
+      desc: jump to the top of the message
+      title: top
+    - default: u
+      desc: undelete the current entry
+      title: undelete-message
+    - default: Esc u
+      desc: undelete all messages in subthread
+      title: undelete-subthread
+    - default: '^U'
+      desc: undelete all messages in thread
+      title: undelete-thread
+    - default: ''
+      desc: generate virtual folder from query
+      title: vfolder-from-query
+    - default: v
+      desc: show MIME attachments
+      title: view-attachments
+    - default: ''
+      desc: show the raw message
+      title: view-raw-message
+    - default: ''
+      desc: display the keycode for a key press
+      title: what-key
+  grouping: pager
+- funcs:
+    - default: b
+      desc: remail a message to another user
+      title: bounce-message
+    - default: Esc P
+      desc: check for classic PGP
+      title: check-traditional-pgp
+    - default: v
+      desc: toggle display of subparts
+      title: collapse-parts
+    - default: d
+      desc: delete the current entry
+      title: delete-entry
+    - default: h
+      desc: display message and toggle header weeding
+      title: display-toggle-weed
+    - default: '^E'
+      desc: edit attachment content type
+      title: edit-type
+    - default: '^K'
+      desc: extract supported public keys
+      title: extract-keys
+    - default: ''
+      desc: followup to newsgroup
+      title: followup-message
+    - default: '^F'
+      desc: wipe passphrases from memory
+      title: forget-passphrase
+    - default: f
+      desc: forward a message with comments
+      title: forward-message
+    - default: ''
+      desc: forward to newsgroup
+      title: forward-to-group
+    - default: g
+      desc: reply to all recipients
+      title: group-reply
+    - default: L
+      desc: reply to specified mailing list
+      title: list-reply
+    - default: '|'
+      desc: pipe message/attachment to a shell command
+      title: pipe-entry
+    - default: p
+      desc: print the current entry
+      title: print-entry
+    - default: r
+      desc: reply to a message
+      title: reply
+    - default: Esc e
+      desc: use the current message as a template for a new one
+      title: resend-message
+    - default: s
+      desc: save message/attachment to a mailbox/file
+      title: save-entry
+    - default: u
+      desc: undelete the current entry
+      title: undelete-entry
+    - default: '&lt;Enter&gt;'
+      desc: view attachment using mailcap entry if necessary
+      title: view-attach
+    - default: '&lt;Return&gt;'
+      desc: view attachment using mailcap entry if necessary
+      title: view-attach
+    - default: m
+      desc: force viewing of attachment using mailcap
+      title: view-mailcap
+    - default: T
+      desc: view attachment as text
+      title: view-text
+  grouping: attachment
+- funcs:
+    - default: a
+      desc: attach files to this message
+      title: attach-file
+    - default: Esc k
+      desc: attach a PGP public key
+      title: attach-key
+    - default: A
+      desc: attach messages to this message
+      title: attach-message
+    - default: ''
+      desc: attach news articles to this message
+      title: attach-news-message
+    - default: C
+      desc: save message/attachment to a mailbox/file
+      title: copy-file
+    - default: D
+      desc: delete the current entry
+      title: detach-file
+    - default: h
+      desc: display message and toggle header weeding
+      title: display-toggle-weed
+    - default: b
+      desc: edit the BCC list
+      title: edit-bcc
+    - default: c
+      desc: edit the CC list
+      title: edit-cc
+    - default: d
+      desc: edit attachment description
+      title: edit-description
+    - default: '^E'
+      desc: edit attachment transfer-encoding
+      title: edit-encoding
+    - default: f
+      desc: enter a file to save a copy of this message in
+      title: edit-fcc
+    - default: '^X e'
+      desc: edit the file to be attached
+      title: edit-file
+    - default: ''
+      desc: edit the Followup-To field
+      title: edit-followup-to
+    - default: Esc f
+      desc: edit the from field
+      title: edit-from
+    - default: E
+      desc: edit the message with headers
+      title: edit-headers
+    - default: '^L'
+      desc: edit the Content-Language of the attachment
+      title: edit-language
+    - default: e
+      desc: edit the message
+      title: edit-message
+    - default: m
+      desc: edit attachment using mailcap entry
+      title: edit-mime
+    - default: ''
+      desc: edit the newsgroups list
+      title: edit-newsgroups
+    - default: r
+      desc: edit the Reply-To field
+      title: edit-reply-to
+    - default: s
+      desc: edit the subject of this message
+      title: edit-subject
+    - default: t
+      desc: edit the TO list
+      title: edit-to
+    - default: '^T'
+      desc: edit attachment content type
+      title: edit-type
+    - default: ''
+      desc: edit the X-Comment-To field
+      title: edit-x-comment-to
+    - default: F
+      desc: filter attachment through a shell command
+      title: filter-entry
+    - default: '^F'
+      desc: wipe passphrases from memory
+      title: forget-passphrase
+    - default: G
+      desc: get a temporary copy of an attachment
+      title: get-attachment
+    - default: '&amp;'
+      desc: group tagged attachments as multipart/alternative
+      title: group-alternatives
+    - default: '^'
+      desc: group tagged attachments as multipart/multilingual
+      title: group-multilingual
+    - default: i
+      desc: run ispell on the message
+      title: ispell
+    - default: +
+      desc: move an attachment down in the attachment list
+      title: move-down
+    - default: '-'
+      desc: move an attachment up in the attachment list
+      title: move-up
+    - default: n
+      desc: compose new attachment using mailcap entry
+      title: new-mime
+    - default: p
+      desc: show PGP options
+      title: pgp-menu
+    - default: '|'
+      desc: pipe message/attachment to a shell command
+      title: pipe-entry
+    - default: P
+      desc: save this message to send later
+      title: postpone-message
+    - default: l
+      desc: print the current entry
+      title: print-entry
+    - default: '^O'
+      desc: send attachment with a different name
+      title: rename-attachment
+    - default: R
+      desc: rename/move an attached file
+      title: rename-file
+    - default: y
+      desc: send the message
+      title: send-message
+    - default: S
+      desc: show S/MIME options
+      title: smime-menu
+    - default: '^D'
+      desc: toggle disposition between inline/attachment
+      title: toggle-disposition
+    - default: ''
+      desc: toggle recoding of this attachment
+      title: toggle-recode
+    - default: u
+      desc: toggle whether to delete file after sending it
+      title: toggle-unlink
+    - default: U
+      desc: update an attachment's encoding info
+      title: update-encoding
+    - default: '&lt;Enter&gt;'
+      desc: view attachment using mailcap entry if necessary
+      title: view-attach
+    - default: '&lt;Return&gt;'
+      desc: view attachment using mailcap entry if necessary
+      title: view-attach
+    - default: w
+      desc: write the message to a folder
+      title: write-fcc
+  grouping: compose
+- funcs:
+    - default: d
+      desc: delete the current entry
+      title: delete-entry
+    - default: u
+      desc: undelete the current entry
+      title: undelete-entry
+  grouping: postpone
+- funcs:
+    - default: d
+      desc: delete the current entry
+      title: delete-entry
+    - default: u
+      desc: undelete the current entry
+      title: undelete-entry
+  grouping: alias
+- funcs:
+    - default: .
+      desc: list mailboxes with new mail
+      title: buffy-list
+    - default: ''
+      desc: mark all articles in newsgroup as read
+      title: catchup
+    - default: c
+      desc: change directories
+      title: change-dir
+    - default: ''
+      desc: check mailboxes for new mail
+      title: check-new
+    - default: C
+      desc: create a new mailbox (IMAP only)
+      title: create-mailbox
+    - default: d
+      desc: delete the current mailbox (IMAP only)
+      title: delete-mailbox
+    - default: '@'
+      desc: display the currently selected file's name
+      title: display-filename
+    - default: m
+      desc: enter a file mask
+      title: enter-mask
+    - default: =
+      desc: swap the current folder position with $folder if it exists
+      title: goto-folder
+    - default: p
+      desc: go to parent directory
+      title: goto-parent
+    - default: ''
+      desc: load list of all newsgroups from NNTP server
+      title: reload-active
+    - default: r
+      desc: rename the current mailbox (IMAP only)
+      title: rename-mailbox
+    - default: N
+      desc: select a new file in this directory
+      title: select-new
+    - default: o
+      desc: sort messages
+      title: sort
+    - default: O
+      desc: sort messages in reverse order
+      title: sort-reverse
+    - default: s
+      desc: subscribe to current mbox (IMAP/NNTP only)
+      title: subscribe
+    - default: ''
+      desc: subscribe to newsgroups matching a pattern
+      title: subscribe-pattern
+    - default: '&lt;Tab&gt;'
+      desc: toggle whether to browse mailboxes or all files
+      title: toggle-mailboxes
+    - default: T
+      desc: toggle view all/subscribed mailboxes (IMAP only)
+      title: toggle-subscribed
+    - default: ''
+      desc: mark all articles in newsgroup as unread
+      title: uncatchup
+    - default: u
+      desc: unsubscribe from current mbox (IMAP/NNTP only)
+      title: unsubscribe
+    - default: ''
+      desc: unsubscribe from newsgroups matching a pattern
+      title: unsubscribe-pattern
+    - default: '&lt;Space&gt;'
+      desc: view file
+      title: view-file
+  grouping: browser
+- funcs:
+    - default: a
+      desc: create an alias from a message sender
+      title: create-alias
+    - default: m
+      desc: compose a new mail message
+      title: mail
+    - default: Q
+      desc: query external program for addresses
+      title: query
+    - default: A
+      desc: append new query results to current results
+      title: query-append
+  grouping: query
+- funcs:
+    - default: '&lt;Backspace&gt;'
+      desc: delete the char in front of the cursor
+      title: backspace
+    - default: '^B'
+      desc: move the cursor one character to the left
+      title: backward-char
+    - default: Esc b
+      desc: move the cursor to the beginning of the word
+      title: backward-word
+    - default: '^A'
+      desc: jump to the beginning of the line
+      title: bol
+    - default: '&lt;Space&gt;'
+      desc: cycle among incoming mailboxes
+      title: buffy-cycle
+    - default: Esc c
+      desc: capitalize the word
+      title: capitalize-word
+    - default: '&lt;Tab&gt;'
+      desc: complete filename or alias
+      title: complete
+    - default: '^T'
+      desc: complete address with query
+      title: complete-query
+    - default: '^D'
+      desc: delete the char under the cursor
+      title: delete-char
+    - default: Esc l
+      desc: convert the word to lower case
+      title: downcase-word
+    - default: '^E'
+      desc: jump to the end of the line
+      title: eol
+    - default: '^F'
+      desc: move the cursor one character to the right
+      title: forward-char
+    - default: Esc f
+      desc: move the cursor to the end of the word
+      title: forward-word
+    - default: ''
+      desc: scroll down through the history list
+      title: history-down
+    - default: '^R'
+      desc: search through the history list
+      title: history-search
+    - default: ''
+      desc: scroll up through the history list
+      title: history-up
+    - default: '^K'
+      desc: delete chars from cursor to end of line
+      title: kill-eol
+    - default: Esc d
+      desc: delete chars from the cursor to the end of the word
+      title: kill-eow
+    - default: '^U'
+      desc: delete all chars on the line
+      title: kill-line
+    - default: '^W'
+      desc: delete the word in front of the cursor
+      title: kill-word
+    - default: '^V'
+      desc: quote the next typed key
+      title: quote-char
+    - default: ''
+      desc: transpose character under cursor with previous
+      title: transpose-chars
+    - default: Esc u
+      desc: convert the word to upper case
+      title: upcase-word
+  grouping: editor
+- funcs:
+    - default: c
+      desc: verify a PGP public key
+      title: verify-key
+    - default: '%'
+      desc: view the key's user id
+      title: view-name
+  grouping: pgp
+- funcs:
+    - default: c
+      desc: verify a PGP public key
+      title: verify-key
+    - default: '%'
+      desc: view the key's user id
+      title: view-name
+  grouping: smime
