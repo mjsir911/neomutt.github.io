@@ -1,0 +1,14 @@
+<h2 id="variables">Configuration Variables</h2>
+<ol>
+{% for var in site.data.reference.variables.vars %}
+<li>
+	<h3 id="{{var.title}}">{{var.title}}</h3>
+	<dl>
+		<dt>Type</dt><dd>{{var.datatype}}</dd>
+		<dt>Default</dt><dd>{{var.default}}</dd>
+	</dl>
+	{{var.body | markdownify}}
+</li>
+
+{% endfor %}
+</ol>
